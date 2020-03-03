@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <h1>Currency Converter</h1>
+
+    <input type="radio" id="USD" name="user" value="USD">
+    <label for="USD">USD</label>
+    <input type="radio" id="EUR" name="user" value="EUR">
+    <label for="EUR">EUR</label>
+    <input type="radio" id="VND" name="user" value="VND">
+    <label for="VND">VND</label>
+    <input type="radio" id="KRW" name="user" value="KRW">
+    <label for="KRW">KRW</label>
+    <input type="radio" id="IDR" name="user" value="IDR">
+    <label for="IDR">IDR</label>
+    
+    <input type="number" id="amount"/>
+    
+    <!--goal currency-->
+    <label for="pet-select">To:</label>
+
+<select name="goal" id="currencies">
+    <option value="USD">USD</option>
+    <option value="EUR">EUR</option>
+    <option value="VND">VND</option>
+    <option value="KRW">KRW</option>
+    <option value="IDR">IDR</option>
+</select>
+    <!--goal currency ends-->
+    <button onclick="showResult()">
+        Convert
+    </button>
+
+    <div id="result"></div>
+    <script src="main.js"></script>
+</body>
+</html>
